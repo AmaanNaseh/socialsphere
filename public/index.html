@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Social Sphere</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="nav-logo">
+            <h3>Social Sphere</h3>
+        </div>
+        <div id="username" class="navbar-right"></div>
+        <button id="logoutButton" onclick="logout()">Logout</button>
+    </div>
+
+    <div class="container">
+
+        <!-- Signup Form -->
+        <div id="signupToggle">
+            <div id="signupForm" class="login-form">
+                <h3>Signup</h3>
+                <input type="text" id="signupUsernameInput" placeholder="Username" /><br>
+                <input type="email" id="signupEmailInput" placeholder="Email" /><br>
+                <input type="password" id="signupPasswordInput" placeholder="Password" /><br>
+                <button onclick="signup()">Signup</button>
+                <p>Already have an account? <span class="toggle-span" onclick="toggleForms('login')">Login</span></p>
+
+            </div>
+        </div>
+
+        <div id="loginToggle">
+            <!-- Login Form -->
+            <div id="loginForm" class="login-form">
+                <h3>Login</h3>
+                <input type="email" id="loginEmailInput" placeholder="Email" /><br>
+                <input type="password" id="loginPasswordInput" placeholder="Password" /><br>
+                <button onclick="login()">Login</button>
+                <p>Don't have an account? <span class="toggle-span" onclick="toggleForms('signup')">Signup</span></p>
+            </div>
+        </div>
+
+
+        <div id="mainSection" style="display: none;">
+
+            <!-- New Section for Follow Feature -->
+            <div class="left-section">
+                <div class="all-users">
+                    <h3>All Users</h3>
+                    <div id="allUsersList"></div>
+                </div>
+            </div>
+
+            <div class="center-section">
+                <!-- Display users -->
+                <div class="users">
+                    <h3>Chat</h3>
+                    <div id="userList"></div>
+                </div>
+
+                <!-- Chat Area -->
+                <div class="chat">
+                    <!-- <h3>Chat</h3> -->
+                    <div id="messages"></div>
+                    <textarea id="messageText" rows="3" placeholder="Type your message..."></textarea><br>
+                    <button onclick="sendMessage()">Send Message</button>
+                </div>
+
+                <!-- Posts Area -->
+                <div class="posts">
+                    <h3>Posts</h3>
+                    <div id="postList"></div>
+                    <textarea id="postContent" placeholder="What's on your mind?"></textarea><br>
+                    <button onclick="createPost()">Create Post</button>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="notifications">
+                    <h3>Notifications</h3>
+                    <button onclick="clearNotifications()">Clear Notifications</button>
+                    <div id="notificationList"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

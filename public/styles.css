@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+  background-image: url("./background_image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.posts,
+.users {
+  margin-top: 30px;
+}
+
+.posts h3,
+.users h3,
+.notifications,
+.all-users h3,
+.login-form h3,
+.login-form p,
+#messages {
+  color: white;
+}
+
+.post,
+.user {
+  background-color: #c6e7ff;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.user {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #c6e7ff;
+}
+
+.message {
+  margin: 10px 0;
+}
+
+textarea {
+  width: 95%;
+  padding: 10px;
+  resize: none;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.login-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-form input {
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #833ab4;
+  color: white;
+  gap: 10px;
+  z-index: 20;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.toggle-span {
+  border-bottom: 2px solid black;
+  color: blue;
+}
+
+.toggle-span:hover {
+  cursor: pointer;
+}
+
+#mainSection {
+  display: flex;
+  flex-direction: column;
+}
+
+#mainSection h3 {
+  text-align: center;
+}
+
+.notifications button {
+  margin: 10px auto;
+}
+
+#logoutButton {
+  background-color: #a31d1d;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    border-radius: 32px;
+    padding: 5px 25px;
+  }
+
+  .container {
+    max-width: fit-content;
+  }
+
+  #mainSection {
+    width: 100%;
+    min-width: 1024px;
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  .left-section {
+    flex-basis: 20%;
+  }
+
+  .center-section {
+    flex-basis: 57%;
+  }
+
+  .right-section {
+    flex-basis: 20%;
+  }
+}
