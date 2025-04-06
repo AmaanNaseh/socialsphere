@@ -27,7 +27,7 @@ The proposed social networking platform (SocialSphere) has significant potential
 1. Clone the repository
 
 ```bash
-git clone https://github.com/AmaanNaseh/socialsphere.git
+git clone https://github.com/xodosop1/socialsphere.git
 ```
 
 2. Navigate to project folder, Install dependencies & run the project
