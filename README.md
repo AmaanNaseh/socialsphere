@@ -49,13 +49,9 @@ npx nodemon server.js
 ## Project Images
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/67bea9d1-6eaa-4c85-97ed-822bf77c8145">
+<img src="https://github.com/user-attachments/assets/184354d2-077c-4f69-b70f-5fd82069e7b1">
 </p>
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/a2cdfda6-75b4-4627-9e07-458ee4d7568d"></img>
-</p>
-
-<p align="center">
-<img src="https://github.com/user-attachments/assets/5ef56051-fd7b-41b2-81f5-fa8e7ea3c88f"></img>
+<img src="https://github.com/user-attachments/assets/b7584016-5eee-476d-86a9-28059d296782"></img>
 </p>
